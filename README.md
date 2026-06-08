@@ -99,3 +99,165 @@ The app supports **multiple note types** (Standard, Checklist, Image, Drawing), 
 ---
 
 ## 📁 Project Structure
+
+
+
+```text
+Syntecxhub_Notes_App/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── screenshots/
+│   ├── Home_page.png
+│   ├── preview.png
+│   ├── Add_note.png
+│   ├── Drawing_notes.png
+│   ├── Dark_mode.png
+│   └── Sidebar_with_Fotter.png
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+
+
+
+---
+
+## 🧩 Components Overview
+
+| Component | Role |
+|-----------|------|
+| `App.jsx` | Root component; manages global state (notes, dark mode, active category) |
+| `Header.jsx` | Top bar with app title, search input, and `+ New Note` button |
+| `Sidebar.jsx` | Left panel with All Notes, Pinned, Photo Notes, Archived, Bin, and Categories |
+| `NotesGrid.jsx` | Renders the responsive 3-column card grid filtered by active category |
+| `NoteCard.jsx` | Individual note — displays title, content, category badge, date, and action icons (pin, archive, edit, delete) |
+| `NoteForm.jsx` | Modal/form to create or edit a note; includes note type selector (Standard, Checklist, Image, Drawing) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure the following are installed:
+
+- [Node.js](https://nodejs.org/) — v16 or higher
+- [Git](https://git-scm.com/)
+- npm — comes bundled with Node.js
+
+### Installation
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/ItsRiku237/Syntecxhub_Notes_App.git
+```
+
+**2. Navigate into the project**
+```bash
+cd Syntecxhub_Notes_App
+```
+
+**3. Install dependencies**
+```bash
+npm install
+```
+
+**4. Start the development server**
+```bash
+npm run dev
+```
+
+App runs at → `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+**Preview the production build locally:**
+```bash
+npm run preview
+```
+
+---
+
+## 💡 Usage
+
+1. Open the app or visit the [live demo](https://syntecxhub-notes-app.netlify.app/)
+2. Click **`+ New Note`** or type in the quick draft bar and press **Add Note**
+3. Choose a note type: **Standard Note**, **Checklist List**, **Image Note**, or **Drawing Canvas**
+4. Use the **Sidebar** to filter by category or view Pinned / Archived / Bin
+5. Use the **Search bar** to find notes by keyword
+6. On each note card:
+   - 📌 **Pin** — keep it at the top
+   - 🗃️ **Archive** — hide without deleting
+   - ✏️ **Edit** — modify content
+   - 🗑️ **Delete** — move to Bin
+7. Toggle **Dark Theme Mode** from the bottom-left of the sidebar
+
+---
+
+## 📈 Future Improvements
+
+- [ ] 🔐 User Authentication (login/signup)
+- [ ] ☁️ Cloud sync — Firebase or Supabase backend
+- [ ] 📝 Rich Text Editor (bold, italic, bullet lists)
+- [ ] 🖼️ Full Image Note upload support
+- [ ] 🎨 Drawing Canvas with color palette
+- [ ] 🔔 Reminders & due dates on notes
+- [ ] 📤 Export notes as PDF or `.txt`
+- [ ] 🏷️ Custom tag creation
+
+---
+
+## 👨‍💻 Developer
+
+<div align="center">
+
+**Riku Sahu**
+
+B.Tech Computer Science & Engineering — GCE Kalahandi
+Web Development Intern @ Syntecxhub
+
+[![GitHub](https://img.shields.io/badge/GitHub-ItsRiku237-181717?style=flat-square&logo=github)](https://github.com/ItsRiku237)
+
+</div>
+
+---
+
+## 🙏 Acknowledgements
+
+- [Syntecxhub](https://syntecxhub.com) — for the hands-on internship program
+- [React Docs](https://reactjs.org/docs) — component & state reference
+- [Vite Docs](https://vitejs.dev/guide/) — build tool documentation
+- [Lucide React](https://lucide.dev/) — open-source icon library
+- [Netlify](https://netlify.com) — free deployment platform
+
+---
+
+## 📄 License
+
+Developed for **educational and internship purposes** under the Syntecxhub Web Development Internship Program.
+
+---
+
+<div align="center">
+
+Made with ❤️ by **Riku Sahu** &nbsp;|&nbsp; Syntecxhub Internship 2025–26
+
+</div>
