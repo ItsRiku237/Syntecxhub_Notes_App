@@ -105,16 +105,29 @@ The app supports **multiple note types** (Standard, Checklist, Image, Drawing), 
 ```text
 Syntecxhub_Notes_App/
 │
-├── public/
+├── public/                        # Static public assets
 │
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
+├── src/                           # Main source code
+│   │
+│   ├── assets/                    # Images, icons, static resources
+│   │
+│   ├── components/                # All reusable UI components
+│   │   ├── Header.jsx             # Top navigation bar + search
+│   │   ├── Header.css             # Header styles
+│   │   ├── Sidebar.jsx            # Left sidebar (categories, filters)
+│   │   ├── Sidebar.css            # Sidebar styles
+│   │   ├── NoteCard.jsx           # Individual note display card
+│   │   ├── NoteCard.css           # NoteCard styles
+│   │   ├── NoteForm.jsx           # Create / Edit note form
+│   │   ├── NoteForm.css           # NoteForm styles
+│   │   ├── NotesGrid.jsx          # Grid layout for all note cards
+│   │   └── NotesGrid.css          # NotesGrid styles
+│   │
+│   ├── App.jsx                    # Root component — state & logic
+│   ├── index.css                  # Global styles
+│   └── main.jsx                   # React DOM entry point
 │
-├── screenshots/
+├── screenshots/                   # App screenshots for README
 │   ├── Home_page.png
 │   ├── preview.png
 │   ├── Add_note.png
@@ -122,13 +135,13 @@ Syntecxhub_Notes_App/
 │   ├── Dark_mode.png
 │   └── Sidebar_with_Fotter.png
 │
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-└── README.md
+├── .gitignore                     # Files excluded from Git
+├── eslint.config.js               # ESLint configuration
+├── index.html                     # HTML shell (Vite entry)
+├── package.json                   # Project metadata & dependencies
+├── package-lock.json              # Locked dependency tree
+├── vite.config.js                 # Vite build configuration
+└── README.md                      # Project documentation
 ```
 
 
@@ -144,8 +157,7 @@ Syntecxhub_Notes_App/
 | `Header.jsx` | Top bar with app title, search input, and `+ New Note` button |
 | `Sidebar.jsx` | Left panel with All Notes, Pinned, Photo Notes, Archived, Bin, and Categories |
 | `NotesGrid.jsx` | Renders the responsive 3-column card grid filtered by active category |
-| `NoteCard.jsx` | Individual note — displays title, content, category badge, date, and action icons (pin, archive, edit, delete) |
-| `NoteForm.jsx` | Modal/form to create or edit a note; includes note type selector (Standard, Checklist, Image, Drawing) |
+| `NoteCard.jsx` | Individual ngirm to create or edit a note; includes note type selector (Standard, Checklist, Image, Drawing) |
 
 ---
 
